@@ -1,0 +1,10 @@
+package toDoList;
+
+public class InitSystem {
+	public static void main(String[] args) {
+		GerenciamentoTarefas toDos = new GerenciamentoTarefas();
+		
+		toDos.addTarefa("teste nome", "Teste decricao", false);
+	}
+
+}

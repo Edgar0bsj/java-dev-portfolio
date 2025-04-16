@@ -1,0 +1,23 @@
+package toDoList;
+
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.Predicate;
+
+public interface TarefasInterface {
+	
+//	Adicionar tarefa
+//	Listar tarefas
+//	Editar tarefa
+//	Marcar tarefa como concluída
+//	Excluir tarefa
+//	Salvar e carregar tarefas de um arquivo (.txt ou .json)
+	abstract boolean addTarefa(String nome, String descricao, boolean concluida);
+	abstract void listarTarefas();
+	abstract void editarTarefas();
+	abstract void marcarTarefas();
+	abstract void excluirTarefas();
+	abstract void salvarTarefas();
+	
+
+}

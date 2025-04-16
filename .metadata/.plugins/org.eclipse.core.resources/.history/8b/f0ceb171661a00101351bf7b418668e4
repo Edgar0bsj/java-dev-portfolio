@@ -1,0 +1,17 @@
+package toDoList;
+
+
+public class InitSystem {
+	public static void main(String[] args) {
+		
+		
+		int marcelo = (8-4)/2+2*1;
+		
+		String r = "8";
+		
+		
+		System.out.println("O Marcelo disse -> " + r);
+		System.out.println("E a solução é -> " + marcelo);
+
+	}
+}

@@ -1,0 +1,19 @@
+package toDoList;
+
+public class InitSystem {
+	public static void main(String[] args) {
+		GerenciamentoTarefas toDos = new GerenciamentoTarefas();
+		
+		
+		toDos.addTarefa();
+		toDos.listarTarefas();
+		toDos.addTarefa();
+
+		
+		toDos.excluirTarefasConcluidas();
+		toDos.marcarTarefas(1);
+		
+		toDos.listarTarefas();
+	}
+
+}

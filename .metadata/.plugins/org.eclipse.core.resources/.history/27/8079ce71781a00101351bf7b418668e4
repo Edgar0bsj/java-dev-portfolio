@@ -1,0 +1,5 @@
+package toDosList.tarefa.model;
+
+public class Tarefa {
+
+}

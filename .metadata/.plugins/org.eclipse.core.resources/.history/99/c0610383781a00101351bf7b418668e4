@@ -1,0 +1,10 @@
+package toDosList.tarefa.model;
+
+public class Tarefa {
+    private int id;
+    private String descricao;
+    private boolean concluida;
+
+    // Getters, setters, construtor...
+}
+

@@ -1,0 +1,13 @@
+package toDoList;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class GerenciamentoTarefas {
+	List<Tarefa> tarefas = new ArrayList<>(); 
+
+	public GerenciamentoTarefas() {
+		// TODO Auto-generated constructor stub
+	}
+}

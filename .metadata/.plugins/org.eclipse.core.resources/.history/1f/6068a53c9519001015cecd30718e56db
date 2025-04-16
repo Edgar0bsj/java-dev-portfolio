@@ -1,0 +1,22 @@
+package toDoList;
+
+import java.util.Scanner;
+
+public class InitSystem {
+	public static void main(String[] args) {
+		GerenciamentoTarefas toDos = new GerenciamentoTarefas();
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("Digite o Titulo da tarefa: ");
+		String nome = sc.next();
+		System.out.print("Digite a Descrição: ");
+		String descricao = sc.next();
+		
+		toDos.addTarefa(nome, descricao);
+		
+		
+		
+		sc.close();
+	}
+
+}

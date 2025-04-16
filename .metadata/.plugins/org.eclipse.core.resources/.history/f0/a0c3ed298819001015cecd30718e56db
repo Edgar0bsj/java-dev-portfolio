@@ -1,0 +1,51 @@
+package toDoList;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class GerenciamentoTarefas implements TarefasInterface {
+	List<Tarefa> tarefas = new ArrayList<>(); 
+	private int proximoId = 1;
+
+
+	@Override
+	public void addTarefa(String nome, String descricao, boolean concluida) {
+	
+		tarefas.add(new Tarefa(proximoId, nome, descricao, concluida));
+		this.proximoId += 1;
+	};
+	
+
+	@Override
+	public void listarTarefas() {
+		tarefas.stream()
+		.forEach(e -> System.out.println(e.getNome()));
+		
+		
+	}
+
+	@Override
+	public void editarTarefas() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void marcarTarefas() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void excluirTarefas() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void salvarTarefas() {
+		// TODO Auto-generated method stub
+		
+	}
+}

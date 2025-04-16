@@ -1,0 +1,42 @@
+package toDosList.tarefa.controller;
+
+
+import java.util.Scanner;
+
+public class TarefaController {
+	private TarefaService service = new TarefaService();
+	private Scanner sc = new Scanner(System.in);
+
+	public void iniciar() {
+		int opcao;
+		do {
+			System.out.println("\n1 - Criar Tarefa");
+			System.out.println("2 - Listar Tarefas");
+			System.out.println("3 - Concluir Tarefa");
+			System.out.println("0 - Sair");
+			opcao = sc.nextInt();
+			sc.nextLine();
+
+			switch (opcao) {
+			case 1:
+				System.out.print("Descrição: ");
+				String desc = sc.nextLine();
+				service.criar(desc);
+				break;
+			case 2:
+				service.listar().forEach(
+						t -> System.out.println(t.getId() + ": " + t.getDescricao() + (t.isConcluida() ? " ✔" : " ✖")));
+				break;
+			case 3:
+				System.out.print("ID da tarefa: ");
+				int id = sc.nextInt();
+				boolean ok = service.concluir(id);
+				if (ok)
+					System.out.println("Tarefa concluída!");
+				else
+					System.out.println("Tarefa não encontrada.");
+				break;
+			}
+		} while (opcao != 0);
+	}
+}

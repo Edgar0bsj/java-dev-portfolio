@@ -1,0 +1,27 @@
+package toDoList;
+
+import java.util.Scanner;
+import java.util.function.BinaryOperator;
+import java.util.function.Consumer;
+import java.util.function.UnaryOperator;
+
+public interface TarefasInterface {
+	static Consumer<String> print = str -> System.out.println(str);
+
+	static UnaryOperator<String> receberNome = nome -> {
+		Scanner sc = new Scanner(System.in);
+	};
+
+	abstract void addTarefa();
+
+	abstract void listarTarefas();
+
+	abstract void editarTarefas();
+
+	abstract void marcarTarefas();
+
+	abstract void excluirTarefas();
+
+	abstract void salvarTarefas();
+
+}

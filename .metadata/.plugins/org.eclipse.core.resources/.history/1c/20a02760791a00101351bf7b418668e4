@@ -1,0 +1,22 @@
+package toDosList.tarefa.repository;
+
+import java.util.*;
+
+public class TarefaRepository {
+    private List<Tarefa> banco = new ArrayList<>();
+
+    public void salvar(Tarefa tarefa) {
+        banco.add(tarefa);
+    }
+
+    public List<Tarefa> listarTodas() {
+        return banco;
+    }
+
+    public Tarefa buscarPorId(int id) {
+        for (Tarefa t : banco) {
+            if (t.getId() == id) return t;
+        }
+        return null;
+    }
+}

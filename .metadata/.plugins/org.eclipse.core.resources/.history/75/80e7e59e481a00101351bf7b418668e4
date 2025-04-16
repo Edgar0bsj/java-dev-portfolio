@@ -1,0 +1,14 @@
+package toDoList;
+
+
+public class InitSystem {
+	public static void main(String[] args) {
+		
+		
+		int marcelo = 0;
+		
+		
+		System.out.println(marcelo);
+
+	}
+}

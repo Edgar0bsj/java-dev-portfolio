@@ -1,0 +1,24 @@
+package toDosList.tarefa.service;
+
+public class TarefaService {
+	private TarefaRepository repo = new TarefaRepository();
+	private int idAtual = 1;
+
+	public void criar(String descricao) {
+		Tarefa t = new Tarefa(idAtual++, descricao);
+		repo.salvar(t);
+	}
+
+	public List<Tarefa> listar() {
+		return repo.listarTodas();
+	}
+
+	public boolean concluir(int id) {
+		Tarefa t = repo.buscarPorId(id);
+		if (t != null) {
+			t.setConcluida(true);
+			return true;
+		}
+		return false;
+	}
+}

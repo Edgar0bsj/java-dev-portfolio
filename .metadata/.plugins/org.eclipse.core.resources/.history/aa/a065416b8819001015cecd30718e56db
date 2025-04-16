@@ -1,0 +1,13 @@
+package toDoList;
+
+public interface TarefasInterface {
+	
+	abstract void addTarefa();
+	abstract void listarTarefas();
+	abstract void editarTarefas();
+	abstract void marcarTarefas();
+	abstract void excluirTarefas();
+	abstract void salvarTarefas();
+	
+
+}

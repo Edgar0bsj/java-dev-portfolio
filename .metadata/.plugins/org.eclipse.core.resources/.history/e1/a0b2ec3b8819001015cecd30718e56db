@@ -1,0 +1,19 @@
+package toDoList;
+
+public interface TarefasInterface {
+	
+//	Adicionar tarefa
+//	Listar tarefas
+//	Editar tarefa
+//	Marcar tarefa como concluída
+//	Excluir tarefa
+//	Salvar e carregar tarefas de um arquivo (.txt ou .json)
+	abstract void addTarefa();
+	abstract void listarTarefas();
+	abstract void editarTarefas();
+	abstract void marcarTarefas();
+	abstract void excluirTarefas();
+	abstract void salvarTarefas();
+	
+
+}

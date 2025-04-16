@@ -1,0 +1,14 @@
+package toDoList;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class GerenciamentoTarefas {
+	List<Tarefa> tarefas = new ArrayList<>(); 
+	private int proximoId = 1;
+
+	public GerenciamentoTarefas() {
+		
+	}
+}
